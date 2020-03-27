@@ -67,7 +67,7 @@ class ArrayRingBuffer:
         # set storage at current index to item
         self.storage[self.current] = item
         # check if at the end of storage
-        if self.current + 1 < len(self.storage - 1):
+        if self.current + 1 < len(self.storage):
             self.current += 1
         # if so, set current to 0
         else:
